@@ -72,9 +72,9 @@ section {
 /* ==================== NAVBAR (Menu Atas) ==================== */
 .navbar {
     /* Ganti rgba(10, 17, 40, 0.95) untuk mengubah warna navbar. 0.95 adalah tingkat transparansi */
-    background: rgba(10, 17, 40, 0.95) !important;
+    background: rgba(56, 85, 178, 0.95) !important;
     backdrop-filter: blur(10px); /* Efek blur (keren, tapi bisa dihapus jika berat) */
-    box-shadow: 0 2px 20px rgba(124, 58, 237, 0.3); /* Bayangan navbar */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3); /* Bayangan navbar */
     padding: 15px 0;
     border-bottom: 1px solid rgba(124, 58, 237, 0.2);
 }
@@ -96,14 +96,14 @@ section {
 
 /* Efek saat link menu di-hover (disorot mouse) */
 .nav-link:hover {
-    color: var(--accent-color) !important; /* Warna berubah jadi warna aksen */
+    color: rgb(102, 0, 255) !important; /* Warna berubah jadi warna aksen */
     transform: translateY(-2px);
 }
 
 /* ==================== HOME SECTION (Tampilan Awal) ==================== */
 #home {
     /* Background Gradient: Ini adalah kombinasi 5 warna. Anda bisa ganti warnanya */
-    background: linear-gradient(135deg, #0a1128 0%, #1a1f3a 25%, #2d1b69 50%, #5d4e8e 75%, #7c3aed 100%);
+    background: linear-gradient(135deg, #0a1128 0%, #1a1f3a 25%, #20229c 50%, #2025ae 75%, #3a67ed 100%);
     position: relative;
     color: white; /* Warna teks di section home */
     text-align: center;
@@ -175,26 +175,26 @@ section {
 
 /* Efek saat ikon sosmed di-hover */
 .social-links a:hover {
-    background: linear-gradient(135deg, var(--space-purple), var(--space-pink)); /* Ganti warna hover */
+    background: linear-gradient(135deg, rgb(53, 53, 255), rgb(94, 94, 219)); /* Ganti warna hover */
     color: white;
     transform: translateY(-5px); /* Efek terangkat */
     box-shadow: 0 10px 25px rgba(124, 58, 237, 0.5);
-    border-color: var(--accent-color);
+    border-color: rgb(138, 138, 255);
 }
 
 /* ==================== ABOUT SECTION (Tentang Saya) ==================== */
 #about {
     background: linear-gradient(180deg, #0a1128 0%, #1a1f3a 100%); /* Background gradient gelap */
-    color: #e2e8f0; /* Warna teks paragraf */
+    color: rgb(104, 104, 224); /* Warna teks paragraf */
 }
 
 /* Judul section "Tentang Saya" (warna putih) */
 #about .section-title {
-    color: white;
+    color: rgb(104, 104, 224);
 }
 /* Garis bawah judul (warna gradient) */
 #about .section-title::after {
-    background: linear-gradient(90deg, var(--space-purple), var(--space-pink));
+    background: linear-gradient(90deg, rgb(53, 53, 255), rgb(94, 94, 219));
 }
 
 /* Foto Profil */
@@ -202,14 +202,14 @@ section {
     width: 100%;
     max-width: 350px; /* Ukuran maksimal foto */
     border-radius: 20px; /* Membuat sudut melengkung */
-    box-shadow: 0 10px 40px rgba(124, 58, 237, 0.4); /* Bayangan foto */
+    box-shadow: 0 10px 40px rgba(58, 70, 237, 0.4); /* Bayangan foto */
     transition: transform 0.3s;
     border: 3px solid rgba(124, 58, 237, 0.3);
 }
 /* Efek hover foto profil */
 .profile-img:hover {
     transform: scale(1.05); /* Sedikit membesar */
-    box-shadow: 0 15px 50px rgba(124, 58, 237, 0.6);
+    box-shadow: 0 15px 50px rgba(67, 58, 237, 0.6);
 }
 
 .about-info {
@@ -217,7 +217,7 @@ section {
 }
 /* Teks profesi (Web Developer & Designer) */
 .about-info h3 {
-    color: var(--accent-color); /* Warna aksen */
+    color: rgb(104, 104, 224); /* Warna aksen */
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -230,18 +230,18 @@ section {
 }
 /* Teks (Nama, Alamat, Email) */
 .info-item strong {
-    color: var(--accent-color); /* Warna aksen */
+    color: rgb(104, 104, 224); /* Warna aksen */
     margin-right: 10px;
 }
 /* Ikon di data diri */
 .info-item i {
-    color: var(--space-purple); /* Warna ungu */
+    color: rgb(104, 104, 224); /* Warna ungu */
 }
 
 /* ==================== RESUME SECTION ==================== */
 #resume {
     background: linear-gradient(180deg, #1a1f3a 0%, #0a1128 100%);
-    color: #e2e8f0;
+    color: rgb(104, 104, 224);
 }
 #resume .section-title {
     color: white;
@@ -250,7 +250,7 @@ section {
     background: linear-gradient(90deg, var(--space-cyan), var(--space-blue));
 }
 #resume h3 {
-    color: var(--accent-color);
+    color: rgb(104, 104, 224);
 }
 
 /* CATATAN: CSS untuk .timeline, .timeline::before, dan .timeline-item 
@@ -263,21 +263,21 @@ section {
     background: rgba(26, 31, 58, 0.6); /* Background kotak (transparan) */
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(124, 58, 237, 0.3);
+    box-shadow: 0 5px 20px rgba(64, 58, 237, 0.3);
     transition: all 0.3s;
-    border: 1px solid rgba(124, 58, 237, 0.2);
+    border: 1px solid rgba(58, 61, 237, 0.2);
     backdrop-filter: blur(10px); /* Efek blur di background kotak */
     margin-bottom: 30px; /* Ditambahkan agar ada jarak antar kartu */
 }
 /* Efek hover kotak resume */
 .timeline-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.5);
-    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(61, 58, 237, 0.5);
+    border-color: rgba(61, 58, 237, 0.5);
 }
 /* Judul (misal: "SD Negeri 1 Kejawen") */
 .timeline-card h4 {
-    color: var(--accent-color);
+    color: rgb(104, 104, 224);
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -291,7 +291,7 @@ section {
     color: #cbd5e1; /* Warna teks deskripsi */
 }
 .timeline-card i {
-    color: var(--space-purple);
+    color: rgb(104, 104, 224);
 }
 
 /* ==================== SKILLS SECTION ==================== */
@@ -303,7 +303,7 @@ section {
     color: white;
 }
 #skills .section-title::after {
-    background: linear-gradient(90deg, var(--space-purple), var(--space-pink));
+    background: linear-gradient(90deg, var(--space-blue), var(--space-cyan));
 }
 
 /* Kotak untuk item skill */
@@ -312,14 +312,14 @@ section {
     padding: 25px;
     margin-bottom: 30px;
     border-radius: 10px;
-    border: 1px solid rgba(124, 58, 237, 0.2);
-    box-shadow: 0 5px 20px rgba(124, 58, 237, 0.2);
+    border: 1px solid rgba(61, 58, 237, 0.2);
+    box-shadow: 0 5px 20px rgba(64, 58, 237, 0.2);
     transition: all 0.3s ease-in-out;
 }
 .skill-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
-    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(58, 64, 237, 0.4);
+    border-color: var(--space-blue);
 }
 
 /* Nama skill (HTML & CSS) */
@@ -332,7 +332,7 @@ section {
     font-size: 1.1rem;
 }
 .skill-name i {
-    color: var(--accent-color); /* Warna ikon skill */
+    color: var(--space-blue); /* Warna ikon skill */
     margin-right: 12px;
     font-size: 1.5rem;
     width: 25px; 
@@ -352,7 +352,7 @@ section {
 .progress-bar {
     border-radius: 12px;
     /* Background gradient untuk bar */
-    background: linear-gradient(90deg, var(--space-purple), var(--space-pink), var(--space-cyan));
+    background: linear-gradient(90deg, var(--space-blue), var(--space-cyan), var(--space-pink));
     background-size: 300% 300%;
     transition: width 1s ease; /* Animasi saat bar terisi */
     animation: gradient-animation 3s ease-in-out infinite; /* Animasi warna gradient */
@@ -394,8 +394,8 @@ section {
     backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid rgba(124, 58, 237, 0.2);
-    box-shadow: 0 10px 40px rgba(124, 58, 237, 0.3);
+    border: 1px solid rgba(58, 61, 237, 0.2);
+    box-shadow: 0 10px 40px rgba(73, 58, 237, 0.3);
 }
 
 .input-group-custom {
@@ -407,7 +407,7 @@ section {
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--accent-color);
+    color: var(--space-blue);
     font-size: 1.1rem;
     transition: color 0.3s;
 }
@@ -426,28 +426,28 @@ section {
 }
 /* Efek saat input di-klik (focus) */
 .input-group-custom .form-control:focus {
-    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.5); /* Bayangan ungu */
+    box-shadow: 0 0 0 3px rgba(58, 67, 237, 0.5); /* Bayangan ungu */
     background: rgba(10, 17, 40, 1);
     border-color: var(--accent-color);
 }
 .input-group-custom .form-control:focus + i {
-    color: var(--space-pink); /* Ikon berubah warna saat input aktif */
+    color: var(--space-blue); /* Ikon berubah warna saat input aktif */
 }
 
 /* Tombol Kirim Pesan */
 .btn-send {
-    background: linear-gradient(135deg, var(--space-purple), var(--space-pink));
+    background: linear-gradient(135deg, var(--space-blue), var(--space-cyan));
     color: white;
     padding: 12px 40px;
     border: none;
     border-radius: 50px; /* Tombol oval */
     font-weight: 600;
     transition: all 0.3s;
-    box-shadow: 0 5px 20px rgba(236, 72, 153, 0.3);
+    box-shadow: 0 5px 20px rgba(72, 91, 236, 0.3);
 }
 .btn-send:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(236, 72, 153, 0.5);
+    box-shadow: 0 10px 25px rgba(72, 168, 236, 0.5);
 }
 
 /* Info kontak (Email, WA, Lokasi) */
@@ -463,7 +463,7 @@ section {
 .contact-info-item i {
     font-size: 1.5rem;
     margin-right: 15px;
-    color: var(--accent-color);
+    color: var(--space-blue);
 }
 
 /* ==================== FOOTER (Bagian Bawah) ==================== */
@@ -490,4 +490,60 @@ footer {
     section {
         padding: 60px 0; /* Jarak atas-bawah section di HP */
     }
+}
+
+.hobbies-section {
+    padding: 4rem 2rem;
+    background: #0a1128;
+    color: white;
+    
+    display: block !important; /* FIX UTAMA */
+    align-items: unset !important;
+}
+
+.hobbies-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.hobbies-card {
+    width: 300px;
+    height: 400px;
+    background: #1a1f3a;
+    border-radius: 12px;
+    border: 2px solid rgba(124, 58, 237, 0.3);
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(58, 67, 237, 0.4); 
+    transition: 0.3s ease-in-out;
+    border: 3px solid rgba(79, 58, 237, 0.3);
+}
+
+.hobbies-card:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 15px 50px rgba(58, 67, 237, 0.6);
+}
+
+.hobbies-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hobbies-card h3 {
+    margin: 1rem;
+    color: var(--space-blue);
+}
+
+.hobbies-card p {
+    margin: 0 1rem 1rem;
+    color: #cbd5e1;
 }
